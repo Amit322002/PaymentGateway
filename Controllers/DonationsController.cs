@@ -26,6 +26,7 @@ public class DonationController : ControllerBase
                 donationDto,
                 "https://yourdomain.com/donation/success?sessionId={CHECKOUT_SESSION_ID}",
                 "https://yourdomain.com/donation/cancel?sessionId={CHECKOUT_SESSION_ID}"
+
             );
 
             return Ok(new { sessionId = session.Id });
